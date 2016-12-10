@@ -1,5 +1,6 @@
-
-
+body {
+	margin: 20px 40px;
+}
 .menu a {
 	text-decoration: none;
 	color: #a8abad;
@@ -12,10 +13,15 @@
 	font-size: 14px;
 	list-style-type: none;
 	display: inline;
+	margin-right: 5px;
 }
 .menu li::after {
 	content: ">";
 	color: #a8abad;
+	margin-left: 5px; 
+}
+ul {
+	padding: 0;
 }
 ul li:last-child:after {
 	content: "";
@@ -35,14 +41,23 @@ h1 {
 	text-transform: uppercase;
 	margin-right: 40px;
 	list-style-type: none; 
+	position: relative;
 }
-.menu2 a:hover {
-	color: #1d1d1d;
+.menu2 .active {
+	color: #000;
 }
+
 .selected {
 	background-image: url(tab_new.png);
 }
 .footer {
 	padding-top: 30px;
 }
-
+.footer img:nth-child(2) {
+	margin: 0 100px;
+}
+li img {
+	position: absolute;
+	top: 35px;
+	left: 55px;
+}
